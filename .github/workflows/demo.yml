@@ -39,7 +39,7 @@ jobs:
         run: npm run build
       - name: Publish JS filename
         id: publish
-        run: echo 'test content' >> $GITHUB_OUTPUT ';'
+        run: echo $date >> $GITHUB_OUTPUT
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
         with:
