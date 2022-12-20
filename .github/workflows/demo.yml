@@ -37,7 +37,7 @@ jobs:
       - name: Download
         uses: actions/download-artifact@v3
         with:
-          name: my-artifact
+          name: artifact
       - name: Output contents
         run: ls
       - name: Deploy
